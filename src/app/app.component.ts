@@ -93,7 +93,11 @@ export class AppComponent implements OnInit {
   }
 
   login() {
-    this.authService.instance.loginRedirect();
+    this.authService.instance.loginRedirect({
+      authority: 'https://hlkcmtb2cuat.b2clogin.com/hlkcmtb2cuat.onmicrosoft.com/B2C_1A_SI_SU_MEIERTOBLER', // ✅ Forces correct B2C authority
+      scopes: ['openid'],
+      redirectUri: 'https://chat-app-sigma-ten-24.vercel.app'
+    });
   }
 
   logout() {
