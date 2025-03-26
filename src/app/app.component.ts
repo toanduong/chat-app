@@ -100,6 +100,10 @@ export class AppComponent implements OnInit {
     this.authService.instance.logoutRedirect();
   }
 
+  invite() {
+    window.open("", "_blank");
+  }
+
   private getToken(uid: string) {
     switch (uid) {
       case "FsPaFNh0VJVJVTDu2l4DiSoT0p72":
