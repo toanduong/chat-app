@@ -11,7 +11,7 @@ const msalInstance = new PublicClientApplication({
     clientId: '2f80d666-387a-470e-8d2b-8ba3ff8ca88b',
     knownAuthorities: ['hlkcmtb2cuat.b2clogin.com'], // ✅ Explicitly tell MSAL to use B2C authority
     authority: 'https://hlkcmtb2cuat.b2clogin.com/hlkcmtb2cuat.onmicrosoft.com/B2C_1A_SI_SU_MEIERTOBLER',
-    redirectUri: 'http://localhost:4200'
+    redirectUri: 'https://chat-app-sigma-ten-24.vercel.app'
   },
   cache: {
     cacheLocation: BrowserCacheLocation.LocalStorage, // ✅ Prevents losing tokens after page reload
